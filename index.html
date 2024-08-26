@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Agenda</h1>
+        <div class="formulario">
+            <label for="dia">Dia da Semana:</label>
+            <select id="dia">
+                <option value="segunda-feira">Segunda-feira</option>
+                <option value="terça-feira">Terça-feira</option>
+                <option value="quarta-feira">Quarta-feira</option>
+                <option value="quinta-feira">Quinta-feira</option>
+                <option value="sexta-feira">Sexta-feira</option>
+                <option value="sábado">Sábado</option>
+                <option value="domingo">Domingo</option>
+            </select>
+
+            <label for="hora-inicial">Horário Inicial:</label>
+            <input type="time" id="hora-inicial">
+
+            <label for="hora-final">Horário Final:</label>
+            <input type="time" id="hora-final">
+
+            <label for="nome-tarefa">Nome da Tarefa:</label>
+            <input type="text" id="nome-tarefa">
+
+            <button id="adicionar-tarefa">Adicionar Tarefa</button>
+        </div>
+
+        <div class="agenda">
+            <h2>Quadro de Horários</h2>
+            <div id="exibicao-agenda" class="exibicao-agenda"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
